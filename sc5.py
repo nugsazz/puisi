@@ -35,9 +35,6 @@ ki6 = LINETCR.LINE()
 ki6.login(token="Emu22IYXLmuVn4xvQgya.EZrmTlyikc+xw1PbTxMkMG.90Ru4o/AkGdefvkfi/RSPHo3lFMOE3CrU8SjmsQQBuY=")
 ki6.loginResult()
 
-adm = LINETCR.LINE()
-adm.login(token="EmSsKFRZ3U4UjgDnPGa8.t0uzqyjD9cgRN/IdWhSi2a.vuZRX38lBErUVxjVw11UsXRcpw9dFUTvcNqc0ifDVyo=")
-adm.loginResult()
 
 helpMessage ="""      ༺ĸ ҉e ҉v ҉ι ҉n ҉ в ҉o ҉т ҉༻\n✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶D̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎E̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎S̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎T̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎R̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎O̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎Y̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎E̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎R̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎Sβ̶Ω̶T҉̶̘̟̼̉̈́͐͋͌̊✈
 
