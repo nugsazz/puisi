@@ -7,34 +7,37 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,urllib
 
 cl = LINETCR.LINE()
-cl.login(token="EmXdTxLztI2i7HJrOEga.h3KqNoP0JeN8FrJP6uiJoG.JUnY5thI0O7mTrNL/8tv6g8dHTbDE2Kyw2c+E9nmxHc=")
-
+cl.login(token="EmtJMpHpQxBZGfaiiGQa.h3KqNoP0JeN8FrJP6uiJoG.2am86X2+2LI1dnSqxYHjywFZfsbJBG3vYm/zxlqmaok=")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EmDlhqNRLRRAi0HEpmh8.DTbDh/XY1svG6guOLGgrEa.Ydo43kzZN8kI/OZF9LyIRenjd4GUtRKxnUhX4fC0Ey4=")
+ki.login(token="EmU1cM9f7wFksSr08LSd.cwB+CDbraDzJDa9X1PRpxq.eUe7nYjHgiuYYMkd9BDvXr0fKX3Aq09dg/+P6gcv1aU=")
 
 ki.loginResult()
 
 ki2 = LINETCR.LINE()
-ki2.login(token="Emx20AVISjN3EZhmo3g2.KpKWyorTPY1wwWUHFd03OG.qbSNaGSy4vS4thqaW0TkMEiL5rg7+4ty0Nabaf+kAuY=")
+ki2.login(token="EmUwBum8fnt3t86GFqc2.KpKWyorTPY1wwWUHFd03OG.C7eZ4eguZOBuQWlfmT8nlEDRigSgD7Rd6QkQpye0D7g=")
 ki2.loginResult()
 
 ki3 = LINETCR.LINE()
-ki3.login(token="EmzHHwxBv1qrRfwsbAhd.cwB+CDbraDzJDa9X1PRpxq.hE9zaXPXVTyFK6YvfCp93ZI8xltR00RG4akcx5b9cmU=")
+ki3.login(token="EmDBHw3Q0QFiBnPo5os8.DTbDh/XY1svG6guOLGgrEa.i6j+9NQTS63Tqn/AZ4Td7kZt29SMFgDb4piHujIwLcw=")
 ki3.loginResult()
 
 ki4 = LINETCR.LINE()
-ki4.login(token="EmK7C1N4fMiFD6Cwfa7f.7I8ZPERZDnDxt4+rBdMTlW.+GGqK0py/1CW7+CBTRl8urJLHFmCm8A6wp9tRxeZraA=")
+ki4.login(token="EmYy93SLjzLU0YBrwLUf.7I8ZPERZDnDxt4+rBdMTlW.N87mbHyB714AoeCmHj94kYZZTCCd3VOmY09qtGK2NR8=")
 ki4.loginResult()
 
 ki5 = LINETCR.LINE()
-ki5.login(token="Em5etGvJ323WYeezDxM3.x29XInczKFNk/xybxHWLaW.RWaELafJ21QtapiGN/ubhu+XS8Sx6JQPMwt7FSSKklY=")
+ki5.login(token="EmG7tWGf4mWYicyffRt3.x29XInczKFNk/xybxHWLaW.PdCvJQJ5F8j5OvUu55WqSza/cT91r0ppUAqDIT8q8VE=")
 ki5.loginResult()
 
 ki6 = LINETCR.LINE()
-ki6.login(token="EmMfHzNaHDHiKX7nEOva.EZrmTlyikc+xw1PbTxMkMG.Nq7fEGYbgchLlVhSPsNU7d39UpXBDgKBjBG6e1uCy6I=")
+ki6.login(token="Emu22IYXLmuVn4xvQgya.EZrmTlyikc+xw1PbTxMkMG.90Ru4o/AkGdefvkfi/RSPHo3lFMOE3CrU8SjmsQQBuY=")
 ki6.loginResult()
+
+adm = LINETCR.LINE()
+adm.login(token="EmSsKFRZ3U4UjgDnPGa8.t0uzqyjD9cgRN/IdWhSi2a.vuZRX38lBErUVxjVw11UsXRcpw9dFUTvcNqc0ifDVyo=")
+adm.loginResult()
 
 helpMessage ="""      ༺ĸ ҉e ҉v ҉ι ҉n ҉ в ҉o ҉т ҉༻\n✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶D̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎E̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎S̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎T̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎R̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎O̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎Y̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎E̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎R̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎Sβ̶Ω̶T҉̶̘̟̼̉̈́͐͋͌̊✈
 
@@ -103,7 +106,7 @@ ki4mid = ki4.getProfile().mid
 ki5mid = ki5.getProfile().mid
 ki6mid = ki6.getProfile().mid
 Bots=[mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid,ki6mid]
-admin = ["u4f451941825df421ab9fe883c07b08d8"]
+admin = ["u4f451941825df421ab9fe883c07b08d8","u1f79109cea748c49fc7d18e9e942233a"]
 
 wait = {
     'contact':False,
