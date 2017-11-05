@@ -7,32 +7,31 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,urllib
 
 cl = LINETCR.LINE()
-cl.login(token="EmtJMpHpQxBZGfaiiGQa.h3KqNoP0JeN8FrJP6uiJoG.2am86X2+2LI1dnSqxYHjywFZfsbJBG3vYm/zxlqmaok=")
+cl.login(token="EmxYJBQELJy63aB1E8Da.h3KqNoP0JeN8FrJP6uiJoG.vFpx+QNdf9/oOJemQBhFg98tPPuahf1eN6vA1TluvU4=")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EmU1cM9f7wFksSr08LSd.cwB+CDbraDzJDa9X1PRpxq.eUe7nYjHgiuYYMkd9BDvXr0fKX3Aq09dg/+P6gcv1aU=")
-
+ki.login(token="EmJ7Wbl5jqjWB5UT8sLd.cwB+CDbraDzJDa9X1PRpxq.VeMCwhfZ4tRGJEcTBUgC4y7nEBkloKHBjwH3zVVKcKU=")
 ki.loginResult()
 
 ki2 = LINETCR.LINE()
-ki2.login(token="EmUwBum8fnt3t86GFqc2.KpKWyorTPY1wwWUHFd03OG.C7eZ4eguZOBuQWlfmT8nlEDRigSgD7Rd6QkQpye0D7g=")
+ki2.login(token="Emvr4xUr1UudXxSrrrf8.DTbDh/XY1svG6guOLGgrEa.+MkDmZZ4M5Ra49AxrQmaHfUOCaHXGoNNbvwdRuMZtS4=")
 ki2.loginResult()
 
 ki3 = LINETCR.LINE()
-ki3.login(token="EmDBHw3Q0QFiBnPo5os8.DTbDh/XY1svG6guOLGgrEa.i6j+9NQTS63Tqn/AZ4Td7kZt29SMFgDb4piHujIwLcw=")
+ki3.login(token="EmWY0PldWnyNTQYTH332.KpKWyorTPY1wwWUHFd03OG.EN+xOOr7sPJNHNZLJi8Ed3PntGiNn6M+Ljd9jkH5ZSE=")
 ki3.loginResult()
 
 ki4 = LINETCR.LINE()
-ki4.login(token="EmYy93SLjzLU0YBrwLUf.7I8ZPERZDnDxt4+rBdMTlW.N87mbHyB714AoeCmHj94kYZZTCCd3VOmY09qtGK2NR8=")
+ki4.login(token="EmNNsgitRRyzvPcFtr6f.7I8ZPERZDnDxt4+rBdMTlW.yQjW9GeMFbncDx5o44mFNVA/MAfmKZxxOyXjCj1/53c=")
 ki4.loginResult()
 
 ki5 = LINETCR.LINE()
-ki5.login(token="EmG7tWGf4mWYicyffRt3.x29XInczKFNk/xybxHWLaW.PdCvJQJ5F8j5OvUu55WqSza/cT91r0ppUAqDIT8q8VE=")
+ki5.login(token="Em6AxH0adcVK6G8fuZk3.x29XInczKFNk/xybxHWLaW.h+yEJhBNGPfcYJj8UlafClMTZ6cQyt15jhNul5bqvVo=")
 ki5.loginResult()
 
 ki6 = LINETCR.LINE()
-ki6.login(token="Emu22IYXLmuVn4xvQgya.EZrmTlyikc+xw1PbTxMkMG.90Ru4o/AkGdefvkfi/RSPHo3lFMOE3CrU8SjmsQQBuY=")
+ki6.login(token="EmHsGX62pKLoaD828vDa.EZrmTlyikc+xw1PbTxMkMG.qFhU4/Qd+64TNcfnLc7kRvoEWkj5ckD9wQ/oa0UAYQY=")
 ki6.loginResult()
 
 
@@ -506,7 +505,7 @@ def bot(op):
                     gs = ki3.getGroup(msg.to)
                     gs = ki4.getGroup(msg.to)
                     gs = ki.getGroup(msg.to)
-                    ki.sendText(msg.to,"「 Mayhem 」\nMayhem is STARTING♪\n ' abort' to abort♪") 
+                    ki.sendText(msg.to,"「 Mayhem 」\nMayhem is STARTING♪\n ' abort' to abort♪")
                     ki.sendText(msg.to,"「 Mayhem 」\n 46 victims shall yell hul·la·ba·loo♪\n /ˌhələbəˈlo͞o,ˈhələbəˌlo͞o/")
                     targets = []
                     for g in gs.members:
