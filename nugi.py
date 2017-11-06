@@ -7,35 +7,34 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,urllib
 
 cl = LINETCR.LINE()
-cl.login(token="EmxYJBQELJy63aB1E8Da.h3KqNoP0JeN8FrJP6uiJoG.vFpx+QNdf9/oOJemQBhFg98tPPuahf1eN6vA1TluvU4=")
+cl.login(token=" ( token admin ) ")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EmJ7Wbl5jqjWB5UT8sLd.cwB+CDbraDzJDa9X1PRpxq.VeMCwhfZ4tRGJEcTBUgC4y7nEBkloKHBjwH3zVVKcKU=")
-ki.loginResult()
+ki.login(token=" ( token isi ya) ")
+ki .loginResult()
 
 ki2 = LINETCR.LINE()
-ki2.login(token="Emvr4xUr1UudXxSrrrf8.DTbDh/XY1svG6guOLGgrEa.+MkDmZZ4M5Ra49AxrQmaHfUOCaHXGoNNbvwdRuMZtS4=")
-ki2.loginResult()
+ki2.login(token=" ( token isi pekok ) ")
+ki2 . (loginResult()
 
 ki3 = LINETCR.LINE()
-ki3.login(token="EmWY0PldWnyNTQYTH332.KpKWyorTPY1wwWUHFd03OG.EN+xOOr7sPJNHNZLJi8Ed3PntGiNn6M+Ljd9jkH5ZSE=")
+ki3.login(toke=" ( isi token pekok) ")
 ki3.loginResult()
 
 ki4 = LINETCR.LINE()
-ki4.login(token="EmNNsgitRRyzvPcFtr6f.7I8ZPERZDnDxt4+rBdMTlW.yQjW9GeMFbncDx5o44mFNVA/MAfmKZxxOyXjCj1/53c=")
+ki4.login(token=" ( isi token pekok) ")
 ki4.loginResult()
 
 ki5 = LINETCR.LINE()
-ki5.login(token="Em6AxH0adcVK6G8fuZk3.x29XInczKFNk/xybxHWLaW.h+yEJhBNGPfcYJj8UlafClMTZ6cQyt15jhNul5bqvVo=")
+ki5.login(token=" ( isi token pekok) ")
 ki5.loginResult()
-
 ki6 = LINETCR.LINE()
-ki6.login(token="EmHsGX62pKLoaD828vDa.EZrmTlyikc+xw1PbTxMkMG.qFhU4/Qd+64TNcfnLc7kRvoEWkj5ckD9wQ/oa0UAYQY=")
+ki6.login(token=" (isi token akun pekok")
 ki6.loginResult()
 
 
-helpMessage ="""      ༺ĸ ҉e ҉v ҉ι ҉n ҉ в ҉o ҉т ҉༻\n✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶D̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎E̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎S̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎T̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎R̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎O̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎Y̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎E̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎R̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎Sβ̶Ω̶T҉̶̘̟̼̉̈́͐͋͌̊✈
+helpMessage ="""      ༺N ҉U ҉G ҉I ҉ ҉ в ҉o ҉т ҉༻\n✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶D̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎E̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎S̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎T̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎R̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎O̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎Y̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎E̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎R̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎Sβ̶Ω̶T҉̶̘̟̼̉̈́͐͋͌̊
 
  ▶[Id]
  ▶[Mid]
@@ -89,7 +88,7 @@ helpMessage ="""      ༺ĸ ҉e ҉v ҉ι ҉n ҉ в ҉o ҉т ҉�
 
  ✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶D̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎E̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎S̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎T̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎R̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎O̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎Y̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎E̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎͎R̶̶꙯꙯꙰꙰͎͎͎͎͎͎͎͎͎͎͎͎͎͎Sβ̶Ω̶T҉̶̘̟̼̉̈́͐͋͌̊✈
 
-☞ http://line.me/ti/p/~ ☜
+☞ Nugi pekok
 """
 helo=""
 
@@ -125,7 +124,7 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"💻Aditya🌹",
+    "cName":"💻Nugi🌹",
     "cNames":"",
     "blacklist":{},
     "wblacklist":False,
